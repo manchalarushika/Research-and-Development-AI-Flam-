@@ -100,7 +100,7 @@ This section is not for self-evaluation but to demonstrate that all required asp
 | Criteria | Description | How It’s Addressed |
 |-----------|--------------|--------------------|
 | **L1 Distance (100 marks)** | Measures the accuracy of the fitted curve by comparing predicted and actual data points. | Implemented L1 loss to minimize the total absolute difference between predicted and actual coordinates. |
-| **Explanation of Process (80 marks)** | Clarity of steps, reasoning, and problem-solving approach. | Each step — from data loading to optimization — is clearly described with logic and explanation in both the code and README. |
+| **Explanation of Process (80 marks)** | Clarity of steps, reasoning, and problem-solving approach. | Each step  from data loading to optimization  is clearly described with logic and explanation in both the code and README. |
 | **Code / GitHub Repository (50 marks)** | Code quality, structure, readability, and proper documentation. | Submitted clean, well-commented Python code with proper structure and organized documentation. |
 | **Additional Work (Bonus Credit)** | Use of extra methods, insights, or visualizations to enhance results. | Included both global and local optimization approaches and a plotted visualization (`final_results.png`) to verify accuracy. |
 
@@ -138,7 +138,8 @@ The alignment confirms that the model successfully captured the pattern of the g
 |------------|-------------|
 | `parametric_curve_fitting.py` | Main Python code |
 | `xy_data.csv` | Dataset of (x, y) points |
-| `final_results.png` | Output curve plot |
+| `final_results.png` | Final results |
+| `fit.png` |  Output curve plot |
 | `README.md` | Full documentation and explanation |
 
 ---
