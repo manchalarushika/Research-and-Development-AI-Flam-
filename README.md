@@ -1,7 +1,7 @@
 #  Research and Development / AI — Parametric Curve Estimation  
 
 ###  Objective  
-The goal of this task is to find the unknown parameters **θ (theta)**, **M**, and **X** in the given parametric equations using the provided dataset.
+The goal of this task is to find the unknown parameters ** theta**, **M**, and **X** in the given parametric equations using the provided dataset.
 
 \[
 x(t) = t\cos(\theta) - e^{M|t|}\sin(0.3t)\sin(\theta) + X
@@ -16,7 +16,7 @@ The main aim is to estimate these parameters so that the predicted curve fits th
 
 ##  Problem Understanding  
 The dataset contains (x, y) points that lie on the curve for \(6 < t < 60\).  
-Here, θ, M, and X are unknown, and even the parameter **t** for each point is not given.  
+Here, Theta, M, and X are unknown, and even the parameter **t** for each point is not given.  
 This makes it a **non-linear optimization problem** where both the hidden variable \(t\) and the parameters must be estimated to make the curve pass through all data points.
 
 ---
@@ -32,7 +32,7 @@ This makes it a **non-linear optimization problem** where both the hidden variab
 
 ### Step 2: Defining the Mathematical Model  
 A function `model(params, t)` was created to represent the given parametric equations.  
-It calculates predicted values of \(x(t)\) and \(y(t)\) for any chosen θ, M, X, and t.  
+It calculates predicted values of \(x(t)\) and \(y(t)\) for any chosen Theta, M, X, and t.  
 This helped compare predicted values with the given dataset.
 
 ---
@@ -73,7 +73,7 @@ Together, these two steps give a stable and precise solution.
 ---
 
 ### Step 7: Recomputing Best t and L1 Score  
-Once final θ, M, and X were found, t was re-optimized for all points, and the **mean L1 loss** was recalculated.  
+Once final Theta, M, and X were found, t was re-optimized for all points, and the **mean L1 loss** was recalculated.  
 A lower L1 score means the predicted curve closely follows the actual data.
 
 ---
@@ -81,7 +81,7 @@ A lower L1 score means the predicted curve closely follows the actual data.
 ### Step 8: Plotting the Final Curve  
 The observed points (blue dots) and the fitted curve (red line) were plotted using **Matplotlib**.  
 This helps to visually confirm that the model fits well.  
-The plot was saved as **`final_results.png`**.
+The plot was saved as **`fit.png`**.
 
 ---
 
@@ -140,9 +140,9 @@ The alignment confirms that the model successfully captured the pattern of the g
 ---
 
 ##  Conclusion  
-This project successfully finds the unknown parameters **θ**, **M**, and **X** for the given parametric equation.  
+This project successfully finds the unknown parameters **Theta**, **M**, and **X** for the given parametric equation.  
 By combining global and local optimization, the model achieves a close fit to the provided data points.  
-The process — from understanding data, defining the model, optimizing parameters, and validating results — is clearly explained and implemented step by step.  
+The process from understanding data, defining the model, optimizing parameters, and validating results is clearly explained and implemented step by step.  
 This demonstrates strong problem-solving, analytical, and coding skills suited for real-world R&D applications.
 
 ---
