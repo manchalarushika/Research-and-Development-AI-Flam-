@@ -1,6 +1,6 @@
 #  Research and Development / AI — Parametric Curve Estimation  
 
-### 🎯 Objective  
+###  Objective  
 The goal of this task is to find the unknown parameters **Theta**, **M**, and **X** in the given parametric equations using the provided dataset.
 
 x(t) = (t * cos(Theta)) - (e^(M * |t|) * sin(0.3 * t) * sin(Theta)) + X  
