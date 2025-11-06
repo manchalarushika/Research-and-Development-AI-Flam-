@@ -21,7 +21,7 @@ This makes it a **non-linear optimization problem** where both the hidden variab
 
 ---
 
-## ⚙️ Approach and Process  
+##  Approach and Process  
 
 ### Step 1: Loading and Understanding the Data  
 - The dataset `xy_data.csv` was loaded using **pandas**.  
@@ -120,7 +120,8 @@ These values, when substituted in the parametric equations, produce a curve that
 
 ## 📈 Visual Output  
 
-![Final Results](final_results.png)
+<img width="595" height="453" alt="image" src="https://github.com/user-attachments/assets/1edadd5c-1513-4982-9662-6d4cb3542818" />
+
 
 The plot shows the observed data (blue) and the fitted curve (red).  
 The alignment confirms that the model successfully captured the pattern of the given data.
@@ -146,15 +147,11 @@ This demonstrates strong problem-solving, analytical, and coding skills suited f
 
 ---
 
-## 🛠 Libraries Used  
+##  Libraries Used  
 - **NumPy** – for mathematical calculations  
 - **Pandas** – for data handling  
 - **SciPy** – for optimization functions (`minimize`, `minimize_scalar`, `differential_evolution`)  
 - **Matplotlib** – for plotting the final fitted curve  
 
----
 
-## ✨ Final Note  
-This assignment helped me apply mathematical reasoning, optimization techniques, and Python implementation to solve a real R&D challenge.  
-I made sure to keep the process simple, well-structured, and fully explained — from data analysis to final visualization — ensuring clarity and correctness throughout the task.
 
