@@ -92,10 +92,10 @@ Together, these steps make the fit smooth and precise.
 
 ---
 
-## ✅ Alignment with Assessment Criteria  
+##  Alignment with Assessment Criteria  
 
 The following table shows how my approach and submission align with the evaluation points mentioned in the assignment.  
-This section is not for self-evaluation but to demonstrate that all required aspects have been addressed clearly in the project.
+This section is to demonstrate that all required aspects have been addressed clearly in the project.
 
 | Criteria | Description | How It’s Addressed |
 |-----------|--------------|--------------------|
