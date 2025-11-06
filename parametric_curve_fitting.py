@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt # for plotting graphs and comparing fitted and r
 
 
 # # Loading the dataset
-df=pd.read_csv("C:/Users/rushi/Downloads/xy_data.csv")
+df=pd.read_csv("xy_data.csv")
 x_data=df["x"].values
 y_data=df["y"].values
 N=len(x_data)
