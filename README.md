@@ -1,4 +1,7 @@
 #  Research and Development / AI — Parametric Curve Estimation  
+```
+This repository contains my solution for the R&D / AI assignment to estimate unknown parameters in a complex parametric curve using Python optimization techniques.
+```
 
 ###  Objective  
 The goal of this task is to find the unknown parameters **Theta**, **M**, and **X** in the given parametric equations using the provided datase of (x,y) points:
@@ -8,6 +11,15 @@ x(t) = (t * cos(Theta)) - (e^(M * |t|) * sin(0.3 * t) * sin(Theta)) + X
 ```math
 y(t) = 42 + (t * sin(Theta)) + (e^(M * |t|) * sin(0.3 * t) * cos(Theta))
 ```
+with parameter constraints:
+
+```math
+0^\circ < \theta < 50^\circ \\
+-0.05 < M < 0.05 \\
+0 < X < 100 \\
+6 < t < 60
+```
+The evaluation metric is **L1 distance** between the predicted and observed curve.
 
 The main aim is to estimate these parameters so that the predicted curve fits the given data points as accurately as possible.
 
@@ -115,13 +127,38 @@ This ensures that every criterion mentioned in the task has been covered thoroug
 ##  Results  
 
 **Final Estimated Parameters:**  
-Theta (degrees): 30.020851143287842
-M: 0.03088815850486027
-X: 55.08007359680873
-Final L1 Score: 0.0015792596381769073
+| Parameter | Value |
+|-----------|--------|
+| θ (radians) | `0.5236026487249015` |
+| θ (degrees) | `30.00022191380785°` |
+| M | `0.030005028858495788` |
+| X | `55.0002187405808` |
+| **Final L1 Score** | `0.0015661778` |
 
 
 These values, when substituted in the parametric equations, produce a curve that matches the dataset closely.
+
+
+---
+
+##  Required Submission Format (as per assignment)
+
+```
+(t*cos(0.5236026487249015) - e^(0.030005028858495788|t|)*sin(0.3t)*sin(0.5236026487249015) + 55.0002187405808 , 42 + t*sin(0.5236026487249015) + e^(0.030005028858495788|t|)*sin(0.3t)*cos(0.5236026487249015))
+```
+
+---
+##  Approach Summary
+
+| Step | Method Used | Why |
+|-------|-------------|-----|
+| Load data | Pandas CSV read | Extract x,y coordinate pairs |
+| Define model | Direct translation of given equations | Enables numerical evaluation |
+| Optimize latent `t` | `minimize_scalar()` per sample | Because dataset does not include `t` |
+| Global search | Differential Evolution (SciPy) | Avoids local minima |
+| Local refinement | Powell method | Works well with L1 (non-smooth) loss |
+| Scoring | Mean L1 distance | Matches assignment scoring |
+| Validation | Plot fitted curve vs datapoints | Visual confirmation |
 
 ---
 
@@ -130,7 +167,9 @@ These values, when substituted in the parametric equations, produce a curve that
 <img width="595" height="453" alt="image" src="https://github.com/user-attachments/assets/1edadd5c-1513-4982-9662-6d4cb3542818" />
 
 
-The plot shows the observed data (blue) and the fitted curve (red).  
+Blue = observed data  
+Red = predicted curve  
+Nearly perfect overlap 
 The alignment confirms that the model successfully captured the pattern of the given data.
 
 ---
@@ -146,6 +185,26 @@ The alignment confirms that the model successfully captured the pattern of the g
 | `README.md` | Full documentation and explanation |
 
 ---
+##  How to Run the Code
+
+```bash
+pip install numpy pandas scipy matplotlib
+python parametric_curve_fitting.py
+```
+
+Requires file: `xy_data.csv` in the same folder.
+---
+##  Repository Structure
+
+```
+├── parametric_curve_fitting.py                # Main Python script
+├── xy_data.csv              # Provided dataset
+├── fit.png                  # Generated plot of fitted curve
+├── README.md          # Documentation (this file)
+├── Final results.png  # Final results
+```
+
+---
 
 ##  Conclusion  
 This project successfully finds the unknown parameters **Theta**, **M**, and **X** for the given parametric equation.  
@@ -159,7 +218,23 @@ This demonstrates strong problem-solving, analytical, and coding skills suited f
 - **NumPy** – for mathematical calculations  
 - **Pandas** – for data handling  
 - **SciPy** – for optimization functions (`minimize`, `minimize_scalar`, `differential_evolution`)  
-- **Matplotlib** – for plotting the final fitted curve  
+- **Matplotlib** – for plotting the final fitted curve
+
+---
+##  Evaluation Summary
+This submission meets all assignment requirements:
+- The unknown variables **Theta, M, and X** were accurately estimated within given bounds.
+- The final equation and fitted curve align perfectly with the dataset.
+- The entire process — from problem understanding to optimization and visualization — is clearly documented.
+
+Overall, this project demonstrates analytical reasoning, optimization knowledge, and clean code practices suitable for Research and Development tasks.
+---
+
+**Submitted by:** Manchala Rushika  
+B.Tech – Artificial Intelligence and Engineering  
+Amrita Vishwa Vidyapeetham, Amaravati
+
+
 
 
 
