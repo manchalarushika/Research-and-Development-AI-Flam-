@@ -4,7 +4,7 @@ This repository contains my solution for the R&D / AI assignment to estimate unk
 ```
 
 ###  Objective  
-The goal of this task is to find the unknown parameters **Theta**, **M**, and **X** in the given parametric equations using the provided datase of (x,y) points:
+The goal of this task is to find the unknown parameters **Theta**, **M**, and **X** in the given parametric equations using the provided dataset of (x,y) points:
 ```math
 x(t) = (t * cos(Theta)) - (e^(M * |t|) * sin(0.3 * t) * sin(Theta)) + X
 ```
@@ -129,11 +129,11 @@ This ensures that every criterion mentioned in the task has been covered thoroug
 **Final Estimated Parameters:**  
 | Parameter | Value |
 |-----------|--------|
-| θ (radians) | `0.5236026487249015` |
-| θ (degrees) | `30.00022191380785°` |
-| M | `0.030005028858495788` |
-| X | `55.0002187405808` |
-| **Final L1 Score** | `0.0015661778` |
+|Theta (radians) | `0.5236026487249015` |
+| Theta (degrees) | `30.00022191380785°` |
+| M | `0.03000510854600627` |
+| X | `55.00007359680873` |
+| **Final L1 Score** | `0.0015792596381769073` |
 
 
 These values, when substituted in the parametric equations, produce a curve that matches the dataset closely.
@@ -197,11 +197,11 @@ Requires file: `xy_data.csv` in the same folder.
 ##  Repository Structure
 
 ```
-├── parametric_curve_fitting.py                # Main Python script
-├── xy_data.csv              # Provided dataset
-├── fit.png                  # Generated plot of fitted curve
-├── README.md          # Documentation (this file)
-├── Final results.png  # Final results
+├── parametric_curve_fitting.py   # Main Python script
+├── xy_data.csv                   # Provided dataset
+├── fit.png                       # Generated plot of fitted curve
+├── README.md                     # Documentation (this file)
+├── Final results.png             # Final results
 ```
 
 ---
@@ -225,9 +225,10 @@ This demonstrates strong problem-solving, analytical, and coding skills suited f
 This submission meets all assignment requirements:
 - The unknown variables **Theta, M, and X** were accurately estimated within given bounds.
 - The final equation and fitted curve align perfectly with the dataset.
-- The entire process — from problem understanding to optimization and visualization — is clearly documented.
+- The entire process  from problem understanding to optimization and visualization — is clearly documented.
 
 Overall, this project demonstrates analytical reasoning, optimization knowledge, and clean code practices suitable for Research and Development tasks.
+
 ---
 
 **Submitted by:** Manchala Rushika  
