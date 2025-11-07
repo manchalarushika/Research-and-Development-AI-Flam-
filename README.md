@@ -130,7 +130,7 @@ This ensures that every criterion mentioned in the task has been covered thoroug
 | Parameter | Value |
 |-----------|--------|
 |Theta (radians) | `0.5236026487249015` |
-| Theta (degrees) | `30.00022191380785°` |
+| Theta (degrees) | `30.000051143287482°` |
 | M | `0.03000510854600627` |
 | X | `55.00007359680873` |
 | **Final L1 Score** | `0.0015792596381769073` |
@@ -180,7 +180,7 @@ The alignment confirms that the model successfully captured the pattern of the g
 |------------|-------------|
 | `parametric_curve_fitting.py` | Main Python code |
 | `xy_data.csv` | Dataset of (x, y) points |
-| `final_results.png` | Final results |
+| `Final results.png` | Final results |
 | `fit.png` |  Output curve plot |
 | `README.md` | Full documentation and explanation |
 
@@ -211,6 +211,7 @@ This project successfully finds the unknown parameters **Theta**, **M**, and **X
 By combining global and local optimization, the model achieves a close fit to the provided data points.  
 The process from understanding data, defining the model, optimizing parameters, and validating results is clearly explained and implemented step by step.  
 This demonstrates strong problem-solving, analytical, and coding skills suited for real-world R&D applications.
+This approach can also be applied to real-world inverse parameter estimation problems in robotics, motion modeling, and physics simulation
 
 ---
 
