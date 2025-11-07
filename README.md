@@ -67,7 +67,7 @@ This ensures every point is mapped to its best possible t.
 ---
 
 ### Step 5: Global Optimization (Differential Evolution)  
-To estimate θ, M, and X, I used **Differential Evolution**, which searches globally across all parameter ranges to avoid getting stuck in local minima.  
+To estimate Theta, M, and X, I used **Differential Evolution**, which searches globally across all parameter ranges to avoid getting stuck in local minima.  
 
 Parameter bounds:  
 - \(0° < θ < 50°\)  
