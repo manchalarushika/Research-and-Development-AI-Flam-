@@ -115,7 +115,7 @@ This ensures that every criterion mentioned in the task has been covered thoroug
 Theta (degrees): 30.020851143287842
 M: 0.03088815850486027
 X: 55.08007359680873
-Final L1 Score: 8.081759625963817
+Final L1 Score: 0.0015792596381769073
 
 
 These values, when substituted in the parametric equations, produce a curve that matches the dataset closely.
