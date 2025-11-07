@@ -231,9 +231,6 @@ Overall, this project demonstrates analytical reasoning, optimization knowledge,
 
 ---
 
-**Submitted by:** Manchala Rushika  
-B.Tech – Artificial Intelligence and Engineering  
-Amrita Vishwa Vidyapeetham, Amaravati
 
 
 
